@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If this research preview helps your work, cite the project and record the version you used."
+title: "Intent-first Cognitive Harness"
+version: "0.1.0"
+date-released: 2026-09-06
+license: MIT
+authors:
+  - name: "Project contributors"

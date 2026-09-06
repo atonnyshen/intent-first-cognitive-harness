@@ -1,0 +1,16 @@
+name: Host compatibility report
+description: Report discovery, interaction, or recovery behaviour on a host.
+body:
+  - type: input
+    id: host
+    attributes:
+      label: Host and version
+    validations:
+      required: true
+  - type: textarea
+    id: receipt
+    attributes:
+      label: Observable receipt
+      description: Include the input class, output state, and whether recovery worked. Remove private content.
+    validations:
+      required: true

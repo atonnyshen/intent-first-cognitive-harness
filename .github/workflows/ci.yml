@@ -1,0 +1,21 @@
+name: public-contracts
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate public tree
+        run: python3 scripts/validate_public_tree.py .
+      - name: Validate compiler and brief tools
+        run: |
+          python3 -m py_compile intake/validate_brief.py router/compile_questions.py scripts/validate_public_tree.py
+          printf '%s\n' '{"raw_request":"x","subject":"y","user_job":{"primary":"understand"},"desired_outcome":"z","deliverable":"answer","readiness":"READY"}' > /tmp/brief.json
+          python3 intake/validate_brief.py /tmp/brief.json

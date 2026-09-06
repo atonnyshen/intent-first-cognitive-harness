@@ -1,0 +1,9 @@
+type: object
+required: [id, language, raw_question, source_class, rights_status]
+properties:
+  id: {type: string}
+  language: {type: string}
+  raw_question: {type: string}
+  source_class: {type: string}
+  rights_status: {type: string}
+  human_review_status: {type: string}

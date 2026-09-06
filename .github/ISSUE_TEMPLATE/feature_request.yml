@@ -1,0 +1,9 @@
+name: Feature request
+description: Describe a user problem and a measurable desired result.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+    validations:
+      required: true

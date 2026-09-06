@@ -1,0 +1,9 @@
+name: Provenance or licence question
+description: Ask about source, attribution, or distribution scope.
+body:
+  - type: textarea
+    id: material
+    attributes:
+      label: Path and question
+    validations:
+      required: true

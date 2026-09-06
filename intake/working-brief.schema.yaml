@@ -1,0 +1,20 @@
+type: object
+required:
+  - raw_request
+  - subject
+  - user_job
+  - desired_outcome
+  - deliverable
+  - readiness
+properties:
+  raw_request: {type: string, minLength: 1}
+  subject: {type: string, minLength: 1}
+  user_job: {type: object}
+  desired_outcome: {type: string, minLength: 1}
+  deliverable: {type: string, minLength: 1}
+  audience: {type: string}
+  known_context: {type: array}
+  assumptions: {type: array}
+  material_unknowns: {type: array}
+  readiness:
+    enum: [PASS_THROUGH, READY, ASK, BLOCKED_USER_INPUT]

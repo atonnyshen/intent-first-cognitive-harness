@@ -1,0 +1,8 @@
+host_capabilities:
+  ambient_triage: "optional"
+  native_menu: "optional"
+  structured_output: "optional"
+  tool_access: "host-controlled"
+  text_fallback: "required"
+states: [PASS_THROUGH, READY, ASK, BLOCKED_USER_INPUT]
+question_format: "plain-language A/B/C or one direct question"
